@@ -48,23 +48,30 @@ body {
 
 #bank-info {
   /* border: 10px solid red; */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 8rem;
 }
 .next-generation {
   /* border: 2px solid rgb(34, 0, 255); */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+}
+.mob-img {
+  /* border: 2px solid red; */
+  background-image: url("images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-y: 1em;
+  background-size: cover;
 }
 
 .mob-img > img {
   z-index: 1;
   width: 100%;
-  transform: translateY(-2.5rem);
+  transform: translateY(-2.4rem);
 }
 .next-text {
   height: 12rem;
