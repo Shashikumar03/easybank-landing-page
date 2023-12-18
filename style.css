@@ -238,7 +238,7 @@ button {
   gap: 1.4rem;
   padding: 2.4rem;
 }
-.bank-logo > img {
+.bank-logo-footer > img {
   /* color: var(--white); */
   background-color: var(--white);
 }
