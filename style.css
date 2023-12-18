@@ -48,6 +48,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3.5rem;
 }
 .next-generation {
   /* border: 2px solid rgb(34, 0, 255); */
@@ -70,23 +71,25 @@ body {
   align-items: center;
   /* background-color: var(--light-grayish-blue); */
 }
+
 .heading > p {
-  font-size: 1.2rem;
+  font-size: 2.3rem;
   margin-left: 1.3rem;
   margin-right: 0.8rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .bank-description > p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-left: 1.3rem;
   margin-right: 0.8rem;
   margin-bottom: 1.5rem;
 }
 .btn {
   /* border: 2px solid red; */
-  width: 60%;
-  height: 20%;
+  width: 50%;
+  height: 18%;
 }
 button {
   font-size: 1rem;
@@ -95,7 +98,7 @@ button {
   width: 100%;
   padding: 0.5rem;
   background-color: blue;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 /* section why choose easybank start */
@@ -169,6 +172,7 @@ button {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .latest-article-items {
