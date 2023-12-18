@@ -206,7 +206,7 @@ button {
   /* border: 2px solid red; */
   display: flex;
   height: auto;
-  width: 80%;
+  width: 15rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -220,5 +220,5 @@ button {
   font-size: 0.8rem;
 }
 .article-text-heading {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
