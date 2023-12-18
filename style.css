@@ -6,7 +6,6 @@
 /* 112.5%=18px */
 html {
   font-size: 112.5%;
-  background-color: white;
 }
 :root {
   /* primary color */
@@ -226,7 +225,8 @@ button {
 .latest-article-img > img {
   height: 12em;
   width: 19em;
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .latest-article-text-div {
   /* border: 2px solid red; */
@@ -262,10 +262,7 @@ button {
   gap: 1.4rem;
   padding: 2.4rem;
 }
-.bank-logo-footer > img {
-  /* color: var(--white); */
-  background-color: var(--white);
-}
+
 .social-media-icon {
   font-size: 2rem;
   height: auto;
@@ -290,7 +287,7 @@ button {
 }
 .copy-rights {
   font-size: 1rem;
-  color: var(--white);
+  color: var(--grayish-blue);
 }
 .footer-btn {
   /* border: 2px solid red; */
