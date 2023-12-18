@@ -64,8 +64,10 @@ body {
   /* border: 2px solid red; */
   background-image: url("images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
-  background-position-y: 1em;
-  background-size: cover;
+  background-position: top right;
+  background-attachment: fixed;
+  background-position-y: 3em;
+  /* background-size: cover; */
 }
 
 .mob-img > img {
