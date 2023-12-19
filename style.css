@@ -195,9 +195,10 @@ button {
 /* latest-article section start.. */
 /* latest-article section start.. */
 #latest-articles {
+  /* border: 2px solid red; */
   height: auto;
   display: flex;
-  width: 100%;
+  width: auto;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
@@ -211,10 +212,24 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-top: 2.5rem;
 
   /* justify-content: space-around; */
+}
+.resturant,
+.currency,
+.plane,
+.confetti {
+  height: 100%;
+  width: 100%;
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 .latest-article-heading {
   /* font-weight: bold; */
@@ -223,18 +238,21 @@ button {
 }
 .latest-article-img {
   /* border: 2px solid red; */
-  width: 90%;
-  height: 50%;
+
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.6rem;
 }
 
 .latest-article-img > img {
-  height: 12em;
-  width: 19em;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 .latest-article-text-div {
   /* border: 2px solid red; */
@@ -247,16 +265,16 @@ button {
   gap: 0.5rem;
 }
 .author {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   align-self: flex-start;
   color: var(--grayish-blue);
 }
 .article-text {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--grayish-blue);
 }
 .article-text-heading {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 /* footer section  */
 #footer {
@@ -310,7 +328,7 @@ button {
   width: 80%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   body {
     font-family: "Public Sans", sans-serif;
   }
@@ -506,6 +524,7 @@ button {
 
   /* latest-article section start.. */
   #latest-articles {
+    border: 2px solid red;
     height: auto;
     display: flex;
     width: 100%;
@@ -516,11 +535,12 @@ button {
   }
 
   .latest-article-items {
-    /* border: 2px solid red; */
-    width: 100%;
+    border: 2px solid red;
+    width: auto;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     margin-top: 2.5rem;
@@ -530,6 +550,7 @@ button {
   .latest-article-heading {
     /* font-weight: bold; */
     padding-top: 3rem;
+    border: 2px solid green;
     font-size: 2rem;
   }
   .latest-article-img {
@@ -542,6 +563,7 @@ button {
   }
 
   .latest-article-img > img {
+    /* border: 2px solid green; */
     height: 12em;
     width: 19em;
     border-top-left-radius: 0.5rem;
