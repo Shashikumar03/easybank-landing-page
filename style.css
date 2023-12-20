@@ -81,6 +81,7 @@ button {
     color: black;
     font-size: 1.2rem;
     border-bottom: none;
+    border: none;
   }
 }
 
