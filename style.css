@@ -44,9 +44,49 @@ button {
   display: none;
 }
 /* this media query is applied on menu bar */
+@media only screen and (max-width: 720px) {
+  .nav-icon:hover .desktop-nav-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 18rem;
+    width: 80%;
+    background-image: var(--white);
+    background-color: white;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    box-shadow: 1rem 4rem 10rem 4.5rem rgb(110, 107, 107);
+    border-radius: 0.1rem;
+  }
+  .nav-icon:hover .home {
+    display: none;
+  }
+
+  .nav-icon:hover .desktop-nav-icon ul {
+    /* border: 2px solid red; */
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* background-color: white; */
+    background-image: var(--white);
+    gap: 1.3em;
+    padding-top: 2.5em;
+  }
+  .nav-icon:hover .desktop-nav-icon ul li > a {
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: none;
+    border: none;
+  }
+}
 
 .container {
-  width: 100vh;
   width: 100%;
 }
 
@@ -76,7 +116,6 @@ button {
   transform: translateY(-2.4rem);
 }
 .next-text {
-  height: 12rem;
   /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
@@ -85,7 +124,7 @@ button {
 }
 
 .heading > p {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   margin-left: 1.3rem;
   margin-right: 0.8rem;
   margin-bottom: 1.5rem;
@@ -102,17 +141,16 @@ button {
 }
 .btn {
   /* border: 2px solid red; */
-  width: 100%;
-  height: 27%;
+  width: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 button {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
-  height: 100%;
-  width: 53%;
+  /* height: 100%; */
+  width: 100%;
   padding: 1rem;
   background-image: linear-gradient(
     to right,
@@ -140,7 +178,6 @@ button {
 
 .bank-upbox {
   /* background-color: antiquewhite; */
-  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -174,11 +211,12 @@ button {
 .bankdatails {
   /* border: 2px solid red; */
   width: 100%;
-  height: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.9rem;
   justify-content: space-around;
+  margin-bottom: 0.7rem;
 }
 .online {
   font-size: 1.2rem;
@@ -206,7 +244,6 @@ button {
 .latest-article-items {
   /* border: 2px solid red; */
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,7 +255,6 @@ button {
 .currency,
 .plane,
 .confetti {
-  height: 100%;
   width: 100%;
   /* border: 5px solid red; */
   display: flex;
@@ -236,7 +272,6 @@ button {
   /* border: 2px solid red; */
 
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +279,6 @@ button {
 }
 
 .latest-article-img > img {
-  height: 100%;
   width: 100%;
   padding: 1.5rem;
   border-top-left-radius: 2rem;
@@ -253,8 +287,7 @@ button {
 .latest-article-text-div {
   /* border: 2px solid red; */
   display: flex;
-  height: auto;
-  width: 15rem;
+  width: 80%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -267,6 +300,7 @@ button {
 }
 .article-text {
   font-size: 0.8rem;
+
   color: var(--grayish-blue);
 }
 .article-text-heading {
@@ -281,7 +315,6 @@ button {
 }
 /* footer section  */
 #footer {
-  height: auto;
   width: 100%;
 
   background-color: var(--dark-blue);
@@ -324,6 +357,8 @@ button {
 .footer-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* border: 2px solid red; */
   gap: 1rem;
 }
