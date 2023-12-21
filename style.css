@@ -43,7 +43,8 @@ button {
 .btn-header {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+/* this media query is applied on menu bar */
+@media only screen and (max-width: 720px) {
   .nav-icon:hover .desktop-nav-icon {
     display: flex;
     justify-content: space-evenly;
@@ -88,19 +89,12 @@ button {
 .container {
   width: 100vh;
   width: 100%;
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 #bank-info {
   /* border: 10px solid red; */
   height: auto;
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center;
-  align-items: center; */
   margin-bottom: 8rem;
 }
 .next-generation {
@@ -114,9 +108,7 @@ button {
   background-image: url("images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  /* background-attachment: fixed; */
   background-position-y: 2.8em;
-  /* background-size: cover; */
 }
 
 .mob-img > img {
@@ -219,7 +211,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* justify-content: space-around; */
 }
 .bankdatails {
   /* border: 2px solid red; */
@@ -242,7 +233,6 @@ button {
 }
 
 /* latest-article section start.. */
-/* latest-article section start.. */
 #latest-articles {
   /* border: 2px solid red; */
   height: auto;
@@ -264,8 +254,6 @@ button {
   justify-content: center;
   gap: 2rem;
   margin-top: 2.5rem;
-
-  /* justify-content: space-around; */
 }
 .resturant,
 .currency,
@@ -407,7 +395,7 @@ svg:hover path {
   fill: var(--lime-green);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 720px) {
   body {
     font-family: "Public Sans", sans-serif;
   }
@@ -596,7 +584,7 @@ svg:hover path {
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    /* padding: 1.9rem; */
+    padding-left: 2.2rem;
     margin-top: -20rem;
     background-color: var(--light-grayish-blue);
   }
@@ -635,11 +623,12 @@ svg:hover path {
     margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: center;
     gap: 3rem;
-    margin-left: 9rem;
+    /* margin-left: 9rem; */
     flex-wrap: wrap;
     padding: 1rem;
+    min-width: 5rem;
   }
   .bankdatails {
     /* border: 2px solid red; */
@@ -648,6 +637,7 @@ svg:hover path {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
+    padding-left: 1rem;
 
     /* padding: 0.5rem; */
   }
@@ -678,10 +668,11 @@ svg:hover path {
     align-items: flex-start;
     margin-bottom: 5rem;
     margin-top: 3rem;
+    padding-left: 2rem;
   }
   .latest-article-heading {
     padding-top: 3rem;
-    margin-left: 7rem;
+    margin-left: 6rem;
   }
   .latest-article-items {
     /* border: 5px solid rgb(0, 98, 255); */
@@ -730,7 +721,6 @@ svg:hover path {
 
   .latest-article-img > img {
     /* border: 2px solid green; */
-    height: 90%;
     width: 100%;
     padding: 0%;
     border-top-left-radius: 0.5rem;
