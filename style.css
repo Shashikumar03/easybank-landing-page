@@ -44,47 +44,6 @@ button {
   display: none;
 }
 /* this media query is applied on menu bar */
-@media only screen and (max-width: 720px) {
-  .nav-icon:hover .desktop-nav-icon {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border: 2px solid red; */
-    height: 18rem;
-    width: 80%;
-    background-image: var(--white);
-    background-color: white;
-    position: absolute;
-    top: 6rem;
-    left: 2rem;
-    box-shadow: 1rem 4rem 10rem 4.5rem rgb(110, 107, 107);
-    border-radius: 0.1rem;
-  }
-  .nav-icon:hover .home {
-    display: none;
-  }
-
-  .nav-icon:hover .desktop-nav-icon ul {
-    /* border: 2px solid red; */
-    list-style: none;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    /* background-color: white; */
-    background-image: var(--white);
-    gap: 1.3em;
-    padding-top: 2.5em;
-  }
-  .nav-icon:hover .desktop-nav-icon ul li > a {
-    color: black;
-    font-size: 1.2rem;
-    border-bottom: none;
-    border: none;
-  }
-}
 
 .container {
   width: 100vh;
