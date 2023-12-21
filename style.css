@@ -99,16 +99,12 @@ button {
 
 #bank-info {
   /* border: 10px solid red; */
-  height: auto;
   display: flex;
   margin-bottom: 8rem;
-}
-.next-generation {
-  /* border: 2px solid rgb(34, 0, 255); */
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
+
 .mob-img {
   /* border: 2px solid red; */
   background-image: url("images/bg-intro-mobile.svg");
@@ -127,7 +123,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  /* justify-content: center; */
   /* background-color: var(--light-grayish-blue); */
 }
 
@@ -406,13 +403,21 @@ svg:hover path {
   }
 
   html {
-    /* font-size: 0%; */
+    font-size: 130%;
   }
+
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     /* overflow-x: hidden; */
+  }
+  .space {
+    padding-left: 8rem;
+  }
+  .margin {
+    margin-left: 8rem;
+    /* background-color: red; */
   }
   .header {
     position: static;
@@ -423,9 +428,9 @@ svg:hover path {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 8rem;
+    padding-left: 0;
     padding-right: 5rem;
-    z-index: 0;
+    /* z-index: 5; */
   }
   .bank-logo {
     /* border: 2px solid red; */
@@ -477,69 +482,59 @@ svg:hover path {
 
   .container {
     /* border: 2px solid red; */
-    width: 100vh;
     width: 100%;
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   #bank-info {
-    /* border: 10px solid red; */
-    height: 100%;
-    display: flex;
+    /* border: 2px solid red; */
     width: 100%;
-    background-color: var(wh);
-  }
-  .next-generation {
-    /* border: 2px solid rgb(34, 0, 255); */
-    display: flex;
-    height: 100%;
-    width: 100%;
+    background-color: var(--white);
     flex-direction: row-reverse;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
     overflow-x: hidden;
+    background-image: url("images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: 30rem -11.5rem;
+    background-size: 85%;
+    margin-bottom: -13.5rem;
   }
   .mob-img {
-    width: 60%;
+    min-width: 50%;
+    max-width: 100%;
     height: auto;
     background-image: none;
     /* border: 2px solid black; */
     display: flex;
     justify-content: flex-end;
     /* margin-right: -6rem; */
-
-    background-image: url("images/bg-intro-desktop.svg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: 1rem -12rem;
-    background-size: 60rem;
-    margin-right: -1rem;
   }
 
   .mob-img > img {
-    z-index: 1;
-    width: 80%;
-    height: 100%;
-    transform: translateY(-6rem);
-    margin-right: -4rem;
+    /* z-index: 1; */
+    width: 100%;
+    height: auto;
+    transform: translate(5rem, -6rem);
   }
 
   .next-text {
-    height: auto;
-    width: 29%;
-    margin-left: 8rem;
+    width: 30%;
     /* border: 2px solid red; */
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: -10rem;
-    padding: 0.5rem;
+    margin-top: 8rem;
+    max-width: 30%;
+    /* height: 50rem; */
+    /* padding-left: 0; */
 
     /* background-color: var(--light-grayish-blue); */
   }
 
-  .heading > p {
+  .heading > h1 {
     font-size: 2.3rem;
     margin-left: 0rem;
     margin-right: 0.8rem;
@@ -548,12 +543,14 @@ svg:hover path {
   }
 
   .bank-description > p {
+    /* border: 2px solid red; */
     font-size: 0.8rem;
     margin-left: 0rem;
     margin-right: 0.8rem;
     margin-bottom: 1.5rem;
     color: var(--grayish-blue);
     line-height: 1.2rem;
+    text-align: left;
   }
   .btn {
     /* border: 2px solid red; */
@@ -589,22 +586,18 @@ svg:hover path {
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    padding-left: 2.2rem;
-    margin-top: -20rem;
+    padding-right: 0;
+    padding-left: 0;
+    /* margin-top: -20rem; */
     background-color: var(--light-grayish-blue);
   }
 
   .bank-upbox {
-    /* background-color: antiquewhite; */
-    height: 20%;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 6rem;
-    /* padding: 0.5rem; */
-    margin-left: 1rem;
-
-    /* border: 10px solid rebeccapurple; */
+    /* border: 2px solid red; */
+    /* padding-left: 11%; */
   }
 
   .why-choose-easybank-text {
@@ -623,26 +616,19 @@ svg:hover path {
   }
   .bank-lowerbox {
     /* border: 2px solid gold; */
-    height: 90%;
     width: 100%;
     margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    /* margin-left: 9rem; */
-    flex-wrap: wrap;
-    padding: 1rem;
-    min-width: 5rem;
+    /* padding-left: 11%; */
   }
   .bankdatails {
     /* border: 2px solid red; */
-    width: 19%;
+    width: 22%;
     height: 100%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding-left: 1rem;
 
     /* padding: 0.5rem; */
   }
@@ -655,7 +641,7 @@ svg:hover path {
 
   .online-text {
     /* border: 2px solid red; */
-    width: 98%;
+    width: 100%;
     font-size: 0.8rem;
     text-align: start;
     line-height: 1rem;
@@ -665,26 +651,25 @@ svg:hover path {
   /* latest-article section start.. */
   #latest-articles {
     /* border: 2px solid red; */
-    height: 24rem;
     display: flex;
     width: 100%;
     justify-content: space-around;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     margin-top: 3rem;
-    padding-left: 2rem;
   }
   .latest-article-heading {
+    /* border: 2px solid red; */
+    width: 100%;
     padding-top: 3rem;
-    margin-left: 6rem;
   }
   .latest-article-items {
     /* border: 5px solid rgb(0, 98, 255); */
     width: 100%;
     height: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2.5rem;
     flex-wrap: wrap;
   }
@@ -693,29 +678,32 @@ svg:hover path {
   .confetti {
     height: 100%;
     width: 19.5%;
-    /* border: 5px solid red; */
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
-    padding: 0.2rem;
+    margin-bottom: 1rem;
+    padding: 0rem;
+    padding-bottom: 2rem;
     /* margin-left: 6rem; */
     box-shadow: rgba(129, 126, 126, 0.1) 0px 4px 12px;
   }
   .currency {
-    height: 100%;
+    
     width: 17.5%;
-    /* border: 5px solid red; */
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
-    padding: 0.2rem;
+    margin-bottom: 1rem;
+    padding: 0rem;
     /* margin-left: 6rem; */
+    padding-bottom: 2rem;
     box-shadow: rgba(129, 126, 126, 0.1) 0px 4px 12px;
   }
+
   .latest-article-img {
     /* border: 2px solid rgb(255, 0, 208); */
     width: 100%;
@@ -727,15 +715,16 @@ svg:hover path {
   .latest-article-img > img {
     /* border: 2px solid green; */
     width: 100%;
+    height: 100%;
     padding: 0%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
   }
+  
 
   .latest-article-text-div {
-    /* border: 2px solid red; */
+    /* border: 2px solid rgb(55, 40, 40); */
     display: flex;
-    height: 80%;
     width: 100%;
     flex-direction: column;
     align-items: center;
