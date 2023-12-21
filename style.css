@@ -7,6 +7,7 @@
 html {
   font-size: 112.5%;
 }
+
 :root {
   /* primary color */
   --dark-blue: hsl(233, 26%, 24%);
@@ -22,6 +23,12 @@ html {
 
 body {
   font-family: "Public Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 button {
   cursor: pointer;
